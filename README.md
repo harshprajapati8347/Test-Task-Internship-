@@ -19,6 +19,3 @@ npm install
 ```bash
 npm start
 ```
-
-### Backend API URL: https://hodlinfo-quadb-internship-task.onrender.com/
-### Hosted Netlify URL: https://hodlinfo-quadb-internship-task.netlify.app/

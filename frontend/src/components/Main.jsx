@@ -5,12 +5,11 @@ export const Main = () => {
 
   useEffect(() => {
   const interval = setInterval(() => {
-	// localhost:5000/tickers
-  http: fetch("https://hodlinfo-quadb-internship-task.onrender.com/")
-    .then((res) => res.json())
-    .then((data) => {
-      setData(data[0].tickers);
-    });
+    fetch("http://localhost:5000/tickers")
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data[0].tickers);
+      });
     }, 100);
     return () => clearInterval(interval);
 }, [])
